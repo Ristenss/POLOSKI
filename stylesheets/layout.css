@@ -1,38 +1,41 @@
 .container{
     max-width: 1680px;
     margin: 0 auto;
-    cursor: url(..//images/cursor.png), auto;
+    overflow: hidden;
 }
 .grid{
     display: grid;
-    display: inline-grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 33.3vw 33.3vw 33.3vw;
     overflow: hidden;
     min-height: 580px;
     max-height: 735px;
 }
 .blyb{
+    flex-wrap: wrap;
     display:flex;
     background-color: #0055FF;
+    grid-row: span 1;
 }
 .stroka1{
     background-color: #000000;
     display: flex;
-    width: 561px;
-    min-width: 426px;
     margin: 0 auto;
     overflow: hidden;
     height: 139px;
 }
-.stroka2{
-    background-color: #ffffff;
+
+.bly{
     display: flex;
-    width: 561px;
-    min-width: 426px;
-    margin: 0 auto;
-    overflow: hidden;
-    height: 139px;
+    height: 140px;
 }
+
+.bly-st{
+    width: 25%;
+    height: 140px;
+    position: relative;
+    top: -170%;
+}
+
 .wh{
     color: #000000;
     flex-shrink: 0;
@@ -42,35 +45,76 @@
 }
 .orangeb{
     background-color: #FF8500;
-    width: 561px;
+    grid-row: span 1;
 }
+
+.q1{
+    position: relative;
+    left: 3%;
+}
+
+.q2{
+    position: relative;
+    left: 43%;
+    top: 10%;
+}
+
+.q3{
+    position: relative;
+    left: 24%;
+    top: 25%;
+}
+
+.q4{
+    position: relative;
+    top: 24%;
+    left: 10%;
+}
+
 .redb{
     display:flex;
     height: 735px;
-    width: 561px;
-    background-color: #EB352C;
+    grid-row: span 1;
     overflow: hidden;
+    background-color: #ffffff;
 }
-.red{
-    height: 585px;
+
+.red {
+  position: relative;
+  width: 560px;
+  height: 256px;
 }
+
+.red img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 560px;
+  height: 586px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+
+.stroka2{
+    display: flex;
+    margin: 0 auto;
+    height: 150px;
+    position: relative;
+    top: 80%;
+}
+
 .bl{
     flex-shrink: 0;
     text-transform: uppercase;
-    animation: running-animation 10s linear infinite;
     white-space: nowrap;
 } 
-@keyframes running-animation {
-    0% {
-        transform: translateZ(0);
-    }
-    100% {
-        transform: translate3d(-100%, 0, 0);
-    }
-}
+
 .tiger{
     background-image: url(..//images/supertig1.svg);
-    width: 1680px;
+    background-size: 100%;
+    max-width: 1680px;
     position: absolute;
     inset: 0;
     background-size: cover;
@@ -80,11 +124,11 @@
     height: 790px;
     position: relative;
 }
-.img{
-    width: 100%;
+.imgg{
+    width: 1250px;
     position: absolute;
-    left: 50%;
-    top: 0;
+    left: 47%;
+    bottom: 12%;
     transform: translateX(-50%);
 }
 .podval{
@@ -95,13 +139,13 @@
     justify-content: space-between;
     align-items: flex-end;
     width: 1680px;
+    padding: 0 20px;
 }
 .logohse{
     background-image: url(..//images/logohse1.svg);
     width: 488px;
     height: 174px;
     margin-bottom: 35px;
-    margin-left: 50px;
 }
 .logomine{
     background-image: url(..//images/logome1.svg);
@@ -120,37 +164,50 @@ p{
 }
 .kisty{
     display: flex;
-    align-items: flex-end;
+    align-items: flex-start;
     background:#EB352C;
     height: 399px;
     overflow: hidden;
     width: 1680px;
     justify-content: center;
 }
-.kisty img{
-    height: 100%;
-    animation: updown 2.5s ease-in-out infinite alternate;
+
+.kist11{
+    position: relative;
+    left: 100%;
 }
-.kisty img:nth-child(even){
-    animation-direction: alternate-reverse;
+
+.kist12{
+    position: relative;
+    left: 0%;
 }
-@keyframes updown {
-    from{
-        transform: translateY(40px);
-    }
-    to{
-        transform: translateY(-40px);
-    }
+
+.kist13{
+    position: relative;
+    left: 0%;
 }
+
+.kist14{
+    position: relative;
+    left: -120%;
+}
+
+
+.star{
+    height: 900px;
+}
+
 .stroka3{
     background-color: #EB352C;
     color: #ffffff;
     display: flex;
     width: 1680px;
     min-width: 1280px;
-    margin: 0 auto;
+    margin-top: -500px;
+    margin-bottom: 500px;
     overflow: hidden;
     height: fit-content;
+    z-index: 1;
 }
 .gg{
     flex-shrink: 0;
@@ -164,43 +221,20 @@ p{
 .star2 {
   position: relative;
   width: 1680px;
-  height: 400px;
+  height: 900px;
   margin: 0 auto;
   overflow: hidden;
-}
-.star1{
-    background-image: url(..//images/bgstar11.svg) center / cover no-repeat;
-    
+  background-image: url(..//images/bgstar11.svg);
+  z-index: -2;
 }
 .star1 img {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 320px;
-  height: auto;
+  height: 90%;
+  width: 90%;
   transform: translate(-50%, -50%);
-  animation:
-    rotate-cw 20s linear infinite,
-    glow 3s ease-in-out infinite;
-}
-@keyframes rotate-cw {
-  from {
-    transform: translate(-50%, -50%) rotate(0deg);
-  }
-  to {
-    transform: translate(-50%, -50%) rotate(360deg);
-  }
-}
-@keyframes glow {
-  0%, 100% {
-    filter: drop-shadow(0 0 20px rgba(0, 120, 255, 0.4));
-  }
-  50% {
-    filter: drop-shadow(0 0 60px rgba(0, 120, 255, 0.9));
-  }
-}
-.star2{
-    background-image: url(..//images/bgstar12.svg) center / cover no-repeat;
+  z-index: -1;
 }
 .star2 img {
   position: absolute;
@@ -209,22 +243,15 @@ p{
   width: 320px;
   height: auto;
   transform: translate(-50%, -50%);
-  animation: rotate-ccw 10s linear infinite, 
-  glow-w 3s ease-in-out infinite;
+  z-index: -1;
 }
-@keyframes rotate-ccw {
-  from {
-    transform: translate(-50%, -50%) rotate(0deg);
-  }
-  to {
-    transform: translate(-50%, -50%) rotate(-360deg);
-  }
-}
-@keyframes glow-w {
-  0%, 100% {
-    filter: drop-shadow(0 0 20px rgba(0, 120, 255, 0.4));
-  }
-  50% {
-    filter: drop-shadow(0 0 60px rgba(0, 120, 255, 0.9));
-  }
+
+.tut{
+    width: 332px;
+    height: 321px;
+    position: absolute;
+    top: 40%;      
+    left: 90%;
+    z-index: 1;
+    pointer-events: none;
 }
