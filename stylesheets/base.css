@@ -1,0 +1,27 @@
+* {
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'TTTravelsTextEdu-Black';
+    src: url('../fonts/TTTravelsTextEdu-Black.eot');
+    src: url('../fonts/TTTravelsTextEdu-Black.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/TTTravelsTextEdu-Black.woff2') format('woff2'),
+        url('../fonts/TTTravelsTextEdu-Black.woff') format('woff'),
+        url('../fonts/TTTravelsTextEdu-Black.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+body {
+    font-family: 'TTTravelsTextEdu-Black';
+    background-color: #000000;
+    color: #ffffff;
+}
+
+h1 {
+    font-size: 133px;
+}
+
+p {
+    font-size: 32px;
+}

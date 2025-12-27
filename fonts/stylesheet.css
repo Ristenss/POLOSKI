@@ -1,0 +1,26 @@
+@font-face {
+    font-family: 'TT Travels Text Edu ExtraBlack';
+    src: url('TTTravelsTextEdu-XBlack.eot');
+    src: url('TTTravelsTextEdu-XBlack.eot?#iefix') format('embedded-opentype'),
+        url('TTTravelsTextEdu-XBlack.woff2') format('woff2'),
+        url('TTTravelsTextEdu-XBlack.woff') format('woff'),
+        url('TTTravelsTextEdu-XBlack.ttf') format('truetype'),
+        url('TTTravelsTextEdu-XBlack.svg#TTTravelsTextEdu-XBlack') format('svg');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TT Travels Text Edu';
+    src: url('TTTravelsTextEdu-Black.eot');
+    src: url('TTTravelsTextEdu-Black.eot?#iefix') format('embedded-opentype'),
+        url('TTTravelsTextEdu-Black.woff2') format('woff2'),
+        url('TTTravelsTextEdu-Black.woff') format('woff'),
+        url('TTTravelsTextEdu-Black.ttf') format('truetype'),
+        url('TTTravelsTextEdu-Black.svg#TTTravelsTextEdu-Black') format('svg');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
