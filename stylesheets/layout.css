@@ -174,22 +174,22 @@ p{
 
 .kist11{
     position: relative;
-    left: 100%;
+    left: 115%;
 }
 
 .kist12{
     position: relative;
-    left: 0%;
+    left: 5%;
 }
 
 .kist13{
     position: relative;
-    left: 0%;
+    left: -5%;
 }
 
 .kist14{
     position: relative;
-    left: -120%;
+    left: -115%;
 }
 
 
@@ -255,3 +255,4 @@ p{
     z-index: 1;
     pointer-events: none;
 }
+

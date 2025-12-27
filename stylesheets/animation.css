@@ -221,3 +221,34 @@
     filter: drop-shadow(0 0 60px rgba(255, 38, 0, 0.9));
   }
 }
+.r1{
+    animation: myAnim 1s ease 0s 1 normal forwards;
+}
+.r2{
+    opacity: 0; 
+    animation: myAnim 1s ease 2s 1 normal forwards;
+}
+.r3{
+    opacity: 0; 
+    animation: myAnim 1s ease 4s 1 normal forwards;
+}
+.r4{
+    opacity: 0; 
+    animation: myAnim 1s ease 6s 1 normal forwards;
+}
+.r5{
+    opacity: 0; 
+    animation: myAnim 1s ease 8s 1 normal forwards;
+}
+@keyframes myAnim {
+	0%,
+	50%,
+	100% {
+		opacity: 1;
+	}
+
+	25%,
+	75% {
+		opacity: 0;
+	}
+}
